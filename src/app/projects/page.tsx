@@ -1162,7 +1162,7 @@ export default function ProjectsPage() {
   return (
     <section className="mx-auto available">
       <h2 className="text-3xl font-sm text-black mb-1">
-        Projects I've worked on
+        Projects I&apos;ve worked on
       </h2>
       <p className="text-1xl font-medium text-slate-400 mb-4">
         Explore my collection of projects. I have worked on a lot of projects,

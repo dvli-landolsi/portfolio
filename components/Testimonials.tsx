@@ -90,10 +90,12 @@ export default function Testimonials() {
   const renderTooltipContent = (testimonial: Testimonial) => (
     <div className="max-w-xs">
       <div className="flex items-center gap-3 mb-3">
-        <img
+        <Image
           src={testimonial.image}
           alt={testimonial.name}
-          className="w-8 h-8 rounded-full object-cover border border-blue-100"
+          width={32}
+          height={32}
+          className="rounded-full object-cover border border-blue-100"
         />
         <div>
           <div className="font-semibold text-white text-sm">
