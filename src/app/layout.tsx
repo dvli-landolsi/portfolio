@@ -17,7 +17,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [isResponsive, setIsResponsive] = useState(true);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const checkWidth = () => {
@@ -27,14 +26,8 @@ export default function RootLayout({
     checkWidth();
     window.addEventListener("resize", checkWidth);
 
-    // Simulate loading time
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
     return () => {
       window.removeEventListener("resize", checkWidth);
-      clearTimeout(timer);
     };
   }, []);
 
