@@ -10,6 +10,9 @@ import {
   AiOutlineCloudUpload,
 } from "react-icons/ai";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { Dropdown } from "antd";
+import type { MenuProps } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 
 const tabs = [
   { name: "Profile", icon: <AiOutlineUser />, path: "/" },
@@ -20,6 +23,31 @@ const tabs = [
 
 export default function Header() {
   const pathname = usePathname();
+
+  const resumeMenuItems: MenuProps["items"] = [
+    {
+      key: "1",
+      label: (
+        <a
+          href="/resume-eng-landolsi-mohamedali.pdf"
+          download="resume-eng-landolsi-mohamedali.pdf"
+        >
+          English Resume
+        </a>
+      ),
+    },
+    {
+      key: "2",
+      label: (
+        <a
+          href="/resume-fr-landolsi-mohamedali.pdf"
+          download="resume-fr-landolsi-mohamedali.pdf"
+        >
+          French Resume
+        </a>
+      ),
+    },
+  ];
 
   return (
     <div className="relative h-[258px] rounded-2xl max-h-1/2  overflow-hidden shadow mb-8">
@@ -88,18 +116,17 @@ export default function Header() {
           {/* Action Buttons */}
           <div className="flex items-center gap-3 py-2 sm:py-0 mb-1.5">
             {/* Upload My Resume Button */}
-            <a
-              href="/your-resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-white-600  text-gray-500 rounded-lg hover:bg-blue-600 border border-gray-500 hover:text-white transition-colors duration-300 text-sm font-medium"
-            >
-              <AiOutlineCloudUpload className="text-lg" /> Upload My Resume
-            </a>
+            <Dropdown menu={{ items: resumeMenuItems }} placement="bottomRight">
+              <button className="flex items-center gap-2 px-4 py-2 bg-white text-gray-500 rounded-lg hover:bg-blue-600 border border-gray-500 hover:text-white transition-colors duration-300 text-sm font-medium cursor-pointer select-none">
+                <AiOutlineCloudUpload className="text-lg" />
+                Download Resume
+                <DownOutlined />
+              </button>
+            </Dropdown>
 
             {/* LinkedIn Button */}
             <a
-              href="https://www.linkedin.com/in/landolsimohamedali"
+              href="https://www.linkedin.com/in/mohamed-ali-landolsi-0a23a4359/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-gray-100 hover:bg-blue-100 text-blue-600 transition-colors duration-300"
@@ -110,7 +137,7 @@ export default function Header() {
 
             {/* GitHub Button */}
             <a
-              href="https://github.com/your-github-username"
+              href="https://github.com/dvli-landolsi"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800 transition-colors duration-300"

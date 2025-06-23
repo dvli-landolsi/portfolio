@@ -63,16 +63,22 @@ export default function Sidebar() {
             "React.js",
             "Next.js",
             "Angular",
-            "Node.js",
-            "TypeScript",
-            "HTML5",
+            "Git",
             "CSS3",
             "Sass",
+            "TypeScript",
+            "Node.js",
+            "HTML5",
             "Tailwind",
-            "Jest",
-            "Cypress",
             "Docker",
-            "Git",
+
+            "JavaScript",
+            "Vue.js",
+            "MUI",
+            "Zustand",
+            "Redux",
+            "WebSocket",
+            "React Native",
           ].map((skill) => (
             <span
               key={skill}

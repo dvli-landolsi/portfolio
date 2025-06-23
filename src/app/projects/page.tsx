@@ -393,7 +393,7 @@ const projects = [
   },
   {
     title: "Taki Academy",
-    image: "/projects/taki.jpg",
+    image: "/projects/takiacademy-2.png",
     tags: ["React Js", "TypeScript", "Node Js", "Docker", "SCSS", "E-Learning"],
     description: [
       { text: "Taki Academy is a " },
@@ -444,11 +444,9 @@ const projects = [
     liveLink: "https://takiacademy.com",
     status: "Live",
     images: [
-      "/projects/taki.jpg",
-      "/projects/taki-2.jpg",
-      "/projects/taki-3.jpg",
-      "/projects/taki-4.jpg",
-      "/projects/taki-5.jpg",
+      "/projects/takiacademy-2.png",
+      "/projects/takiacademy-1.png",
+      "/projects/takiacademy.png",
     ],
     tasks: [
       {
@@ -963,7 +961,7 @@ const projects = [
       location: "Remote",
     },
     link: "#",
-    liveLink: "#",
+    // liveLink: "#",
     status: "Completed",
     images: [
       "/projects/transcribe.png",
@@ -1014,98 +1012,98 @@ const projects = [
       "Git - GitHub",
     ],
   },
-  {
-    title: "Party Planner",
-    image: "/projects/party-planner.png",
-    tags: ["Next.js", "React", "TypeScript", "Supabase", "Full Stack"],
-    description: [
-      {
-        text: "Party Planner is a ",
-      },
-      {
-        text: "venue reservation management system",
-        highlight: true,
-        color: "blue",
-      },
-      {
-        text: " that enables administrators to manage venue bookings and track business performance. As a ",
-      },
-      {
-        text: "Full Stack Developer",
-        highlight: true,
-        color: "purple",
-      },
-      {
-        text: ", I implemented ",
-      },
-      {
-        text: "admin dashboard with reservation management and analytics",
-        highlight: true,
-        color: "green",
-      },
-      {
-        text: " to streamline venue operations and track business metrics.",
-      },
-    ],
-    meta: {
-      productOwner: "Party Planner",
-      performance: "95+ Lighthouse",
-      compatibility: "All devices",
-      duration: "4 months",
-      category: "Full Stack Application",
-      location: "Remote",
-    },
-    link: "#",
-    liveLink: "https://party-planner.com",
-    status: "Live",
-    images: [
-      "/projects/party-planner.png",
-      "/projects/party-planner-1.png",
-      "/projects/party-planner-2.png",
-      "/projects/party-planner-3.png",
-    ],
-    tasks: [
-      {
-        title: "Category Browsing System",
-        description:
-          "Mentored the team in developing a comprehensive category browsing system for venues and services, with advanced filtering and search capabilities.",
-        tags: ["Category System", "Search", "Filtering"],
-      },
-      {
-        title: "Venue Reservation System",
-        description:
-          "Guided the implementation of a robust venue reservation system with real-time availability checking and booking management.",
-        tags: ["Reservations", "Real-time", "Booking System"],
-      },
-      {
-        title: "Service Provider Integration",
-        description:
-          "Mentored the team in creating a system for service providers to list and manage their offerings, including venue details and availability.",
-        tags: ["Service Management", "Integration", "UI/UX"],
-      },
-      {
-        title: "Client-Service Provider Communication",
-        description:
-          "Oversaw the development of a communication system between clients and service providers for venue inquiries and bookings.",
-        tags: ["Communication", "Messaging", "Supabase"],
-      },
-      {
-        title: "Booking Management",
-        description:
-          "Guided the implementation of a comprehensive booking management system with automated notifications and status updates.",
-        tags: ["Booking", "Automation", "Management"],
-      },
-    ],
-    technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Supabase",
-      "Figma",
-      "Discord",
-      "Git - GitHub",
-    ],
-  },
+  // {
+  //   title: "Party Planner",
+  //   image: "/projects/party-planner.png",
+  //   tags: ["Next.js", "React", "TypeScript", "Supabase", "Full Stack"],
+  //   description: [
+  //     {
+  //       text: "Party Planner is a ",
+  //     },
+  //     {
+  //       text: "venue reservation management system",
+  //       highlight: true,
+  //       color: "blue",
+  //     },
+  //     {
+  //       text: " that enables administrators to manage venue bookings and track business performance. As a ",
+  //     },
+  //     {
+  //       text: "Full Stack Developer",
+  //       highlight: true,
+  //       color: "purple",
+  //     },
+  //     {
+  //       text: ", I implemented ",
+  //     },
+  //     {
+  //       text: "admin dashboard with reservation management and analytics",
+  //       highlight: true,
+  //       color: "green",
+  //     },
+  //     {
+  //       text: " to streamline venue operations and track business metrics.",
+  //     },
+  //   ],
+  //   meta: {
+  //     productOwner: "Party Planner",
+  //     performance: "95+ Lighthouse",
+  //     compatibility: "All devices",
+  //     duration: "4 months",
+  //     category: "Full Stack Application",
+  //     location: "Remote",
+  //   },
+  //   link: "#",
+  //   // liveLink: "https://party-planner.com",
+  //   status: "Live",
+  //   images: [
+  //     "/projects/party-planner.png",
+  //     "/projects/party-planner-1.png",
+  //     "/projects/party-planner-2.png",
+  //     "/projects/party-planner-3.png",
+  //   ],
+  //   tasks: [
+  //     {
+  //       title: "Category Browsing System",
+  //       description:
+  //         "Mentored the team in developing a comprehensive category browsing system for venues and services, with advanced filtering and search capabilities.",
+  //       tags: ["Category System", "Search", "Filtering"],
+  //     },
+  //     {
+  //       title: "Venue Reservation System",
+  //       description:
+  //         "Guided the implementation of a robust venue reservation system with real-time availability checking and booking management.",
+  //       tags: ["Reservations", "Real-time", "Booking System"],
+  //     },
+  //     {
+  //       title: "Service Provider Integration",
+  //       description:
+  //         "Mentored the team in creating a system for service providers to list and manage their offerings, including venue details and availability.",
+  //       tags: ["Service Management", "Integration", "UI/UX"],
+  //     },
+  //     {
+  //       title: "Client-Service Provider Communication",
+  //       description:
+  //         "Oversaw the development of a communication system between clients and service providers for venue inquiries and bookings.",
+  //       tags: ["Communication", "Messaging", "Supabase"],
+  //     },
+  //     {
+  //       title: "Booking Management",
+  //       description:
+  //         "Guided the implementation of a comprehensive booking management system with automated notifications and status updates.",
+  //       tags: ["Booking", "Automation", "Management"],
+  //     },
+  //   ],
+  //   technologies: [
+  //     "Next.js",
+  //     "React",
+  //     "TypeScript",
+  //     "Supabase",
+  //     "Figma",
+  //     "Discord",
+  //     "Git - GitHub",
+  //   ],
+  // },
 ];
 
 export default function ProjectsPage() {
