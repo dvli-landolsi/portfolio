@@ -1148,7 +1148,7 @@ export default function Projects() {
           slides: { perView: 3, spacing: 30 },
         },
         "(min-width: 1280px)": {
-          slides: { perView: 5, spacing: 10 },
+          slides: { perView: 4, spacing: 10 },
         },
       },
       slides: { perView: 1, spacing: 10 },
@@ -1234,7 +1234,7 @@ export default function Projects() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-5 w-5 text-black"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -1258,7 +1258,7 @@ export default function Projects() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-5 w-5 text-black"
               viewBox="0 0 20 20"
               fill="currentColor"
             >

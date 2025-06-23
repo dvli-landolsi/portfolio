@@ -4,12 +4,12 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 import { useEffect } from "react";
-import { FaQuoteLeft, FaExternalLinkAlt } from "react-icons/fa";
+import { FaQuoteLeft, FaExternalLinkAlt, FaUser } from "react-icons/fa";
 
 interface Testimonial {
   name: string;
   role: string;
-  image: string;
+  image?: string;
   text: string;
   link?: string;
   linkType?: "upwork" | "linkedin" | "other";
@@ -19,31 +19,26 @@ const testimonials: Testimonial[] = [
   {
     name: "Chadi Bader",
     role: "Student",
-    image: "/profile.jpg",
     text: "I had the pleasure of working with mohamed ali as my supervisor during my final project at university. Throughout the project, he was incredibly supportive and played a major role in helping me overcome coding challenges by providing clear guidance and practical solutions. Thanks to his expertise, the work became much easier and more understandable for me. He is not only an outstanding developer with deep knowledge in the field but also a great mentor who truly cares about helping others succeed. I'm grateful for the opportunity to have worked under his supervision.",
   },
   {
     name: "Benjamin Vergnet",
     role: "Client CEO Tresovista",
-    image: "/profile.jpg",
     text: "Mohamed Ali participe activement au développement de @Tresovista. Il est très efficace et performant, c'est très agréable de travailler avec lui !",
   },
   {
     name: "Mhamed Monastiri",
     role: "Collegues",
-    image: "/profile.jpg",
     text: "Working with Mohamed Ali is very easy thanks to his communication skills, intelligence, and positive attitude. Collaboration with him is effortless; he pays great attention to detail and consistently delivers excellent work.",
   },
   {
     name: "Marwa Werfelli",
     role: "Collegues",
-    image: "/profile.jpg",
     text: "I had the pleasure of working with Mohamed Ali on several projects. He is a smart and reliable frontend developer who consistently delivers clean, high-quality code on time. Mohamed is a great team player, always ready to collaborate and find efficient solutions. I highly recommend him and look forward to working together again.",
   },
   {
     name: "Client Bioverse",
     role: "Upwork Client Bioverse",
-    image: "/profile.jpg",
     text: "Mohamed is incredibly collaborative and consistently works hard to deliver on his promises. It was great working with him. I highly recommend Mohamed for any software engineering projects.",
     link: "https://www.upwork.com/freelancers/~01example",
     linkType: "upwork",
@@ -51,7 +46,6 @@ const testimonials: Testimonial[] = [
   {
     name: "Prashant Pukale",
     role: "Upwork Client Meditation app",
-    image: "/profile.jpg",
     text: "Mohamed is extremely pro active and delivers top quality stuff! I am so happy I hired him for my project.",
     link: "https://www.upwork.com/freelancers/~02example",
     linkType: "upwork",
@@ -91,13 +85,19 @@ export default function Testimonials() {
   const renderTooltipContent = (testimonial: Testimonial) => (
     <div className="max-w-xs">
       <div className="flex items-center gap-3 mb-3">
-        <Image
-          src={testimonial.image}
-          alt={testimonial.name}
-          width={32}
-          height={32}
-          className="rounded-full object-cover border border-blue-100"
-        />
+        {testimonial.image ? (
+          <Image
+            src={testimonial.image}
+            alt={testimonial.name}
+            width={32}
+            height={32}
+            className="rounded-full object-cover border border-blue-100"
+          />
+        ) : (
+          <div className="w-8 h-8 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center">
+            <FaUser className="w-4 h-4 text-blue-500" />
+          </div>
+        )}
         <div>
           <div className="font-semibold text-white text-sm">
             {testimonial.name}
@@ -157,13 +157,19 @@ export default function Testimonials() {
                     </p>
 
                     <div className="flex items-center gap-3 mt-auto">
-                      <Image
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        width={40}
-                        height={40}
-                        className="rounded-full object-cover border-2 border-blue-100"
-                      />
+                      {testimonial.image ? (
+                        <Image
+                          src={testimonial.image}
+                          alt={testimonial.name}
+                          width={40}
+                          height={40}
+                          className="rounded-full object-cover border-2 border-blue-100"
+                        />
+                      ) : (
+                        <div className="w-10 h-10 rounded-full bg-blue-100 border-2 border-blue-200 flex items-center justify-center">
+                          <FaUser className="w-5 h-5 text-blue-500" />
+                        </div>
+                      )}
                       <div className="text-left flex-1">
                         <div className="font-semibold text-[#0a174e] leading-tight">
                           {testimonial.name}

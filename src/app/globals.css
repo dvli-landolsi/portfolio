@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   box-sizing: border-box;
+  font-size: 15px;
 }
 
 @theme inline {
@@ -29,4 +30,30 @@ body {
 
 .available {
   width: -webkit-fill-available;
+}
+/* Custom scrollbar for a thinner look */
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a5a5db var(--background); /* thumb and track color */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9292ff;
+  border-radius: 10px;
+  border: 2px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c8c8ff;
 }
