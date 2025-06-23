@@ -15,7 +15,7 @@ export default function Sidebar() {
           <Image src="/profile.jpg" alt="Profile" width={80} height={80} />
         </div>
         <div className="text-center">
-          <h2 className="font-bold text-lg">Mohamed Ali Landolsi</h2>
+          <h2 className="font-bold text-lg text-black">Mohamed Ali Landolsi</h2>
           <p className="text-xs text-gray-500">
             Software Engineer | Front-end Developer | Scrum Master
           </p>
@@ -23,7 +23,7 @@ export default function Sidebar() {
       </div>
       {/* About */}
       <div>
-        <h3 className="font-semibold text-sm mb-1">About</h3>
+        <h3 className="font-semibold text-sm mb-1 text-black">About</h3>
         <p className="text-xs text-gray-600">
           Web Developer, Front-End Engineer, and Freelancer . Scrum Master and
           Technical Trainer with expertise in modern JavaScript frameworks and
@@ -32,7 +32,7 @@ export default function Sidebar() {
       </div>
       {/* Diplomas */}
       <div>
-        <h3 className="font-semibold text-sm mb-1">Diplomas</h3>
+        <h3 className="font-semibold text-sm mb-1 text-black">Diplomas</h3>
         <div className="text-xs text-gray-600 list-disc list-inside">
           <div>
             <a
@@ -57,7 +57,7 @@ export default function Sidebar() {
 
       {/* Skills */}
       <div>
-        <h3 className="font-semibold text-sm mb-1">Skills</h3>
+        <h3 className="font-semibold text-sm mb-1 text-black">Skills</h3>
         <div className="flex flex-wrap gap-2">
           {[
             "React.js",
@@ -92,7 +92,7 @@ export default function Sidebar() {
 
       {/* social */}
       <div>
-        <h3 className="font-semibold text-sm mb-1">Social</h3>
+        <h3 className="font-semibold text-sm mb-1 text-black">Social</h3>
         <ul className="flex flex-col gap-1 text-xs">
           <li>
             <a
