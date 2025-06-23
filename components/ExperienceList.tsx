@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import Image from "next/image";
@@ -116,13 +117,6 @@ const experiences = [
     },
     relatedProjects: [
       {
-        title: "Meditation App",
-        image: "/projects/meditation-app.jpg",
-        description:
-          "A mobile meditation app with a focus on UX and calm design.",
-        link: "#",
-      },
-      {
         title: "Bioverse Platform",
         image: "/projects/bioverse.jpg",
         description: "Animated product platform for bio-data visualization.",
@@ -177,13 +171,13 @@ const experiences = [
     relatedProjects: [
       {
         title: "AI Transcription Tool",
-        image: "/projects/ai-transcription.jpg",
+        image: "/projects/transcribe.png",
         description: "A tool for real-time AI-powered audio transcription.",
         link: "#",
       },
       {
         title: "Event Planner App",
-        image: "/projects/event-planner.jpg",
+        image: "/projects/partyplanner.png",
         description: "A collaborative event planning and scheduling app.",
         link: "#",
       },
@@ -223,7 +217,7 @@ const experiences = [
         link: "https://recruitment.softylines.com/",
       },
       {
-        title: "RHRcruitment Platform BO",
+        title: "RHRcruitment Back-office",
         image: "/projects/rh.jpg",
         description:
           "A recruitment platform back-office for job posting and application workflows.",
@@ -245,7 +239,7 @@ export default function ExperienceList() {
 
   return (
     <section>
-      <h2 className="text-3xl  mb-1 text-black">Experiences</h2>
+      <h2 className="text-2xl font-sm mb-1 text-black">Experiences</h2>
       <p className="text-1xl font-medium text-slate-400 mb-8">
         I have worked with a lot of companies and projects, here are some of
         them.

@@ -120,7 +120,7 @@ export default function Contacts() {
         <div className="grid grid-cols-1  gap-12">
           {/* Contact Information Section */}
           <div>
-            <h2 className="text-3xl  text-gray-900 mb-1">Get in Touch</h2>
+            <h2 className="text-2xl text-gray-900 mb-1">Get in Touch</h2>
             <p className="text-gray-600 mb-8">
               I&apos;m always open to discussing new opportunities, interesting
               projects, or just having a chat about technology.
@@ -149,15 +149,15 @@ export default function Contacts() {
           </div>
 
           {/* Divider */}
-          {/* <div className="hidden lg:block lg:col-span-1">
+          <div className="hidden lg:block">
             <div className="h-full flex items-center justify-center">
-              <div className="w-px h-32 bg-gray-300"></div>
+              <div className="w-full h-px bg-gray-300"></div>
             </div>
-          </div> */}
+          </div>
 
           {/* Contact Form Section */}
           <div>
-            <h2 className="text-3xl  text-gray-900 mb-8">Send me a Message</h2>
+            <h2 className="text-2xl text-gray-900 mb-8">Send me a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
