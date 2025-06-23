@@ -20,6 +20,12 @@ const ServicesLayout = () => {
       "Cloud and DevOps for reliable deployment",
       "Performance and security optimization",
     ],
+    specialized: [
+      "Proof-of-Concept (PoC) creation to validate new ideas",
+      "Agile project management and technical leadership",
+      "Performance audits and optimization for speed and reliability",
+      "Performance and security optimization",
+    ],
   };
 
   return (
@@ -83,6 +89,29 @@ const ServicesLayout = () => {
               </div>
             </div>
             {servicesData.backend.map((service, index) => (
+              <div
+                key={index}
+                className="bg-white border-2 border-blue-600/10 rounded-2xl p-4 hover:border-blue-300 hover:shadow-lg transition-all duration-300 group relative overflow-hidden"
+              >
+                <div className="absolute top-0 left-0 right-0 h-1 bg-blue-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  {service}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* specialized Row */}
+          <div className="grid grid-cols-5 gap-3 mb-12 items-start">
+            <div className="inline-block">
+              <div className="relative text-blue-300 font-semibold">
+                <div className="absolute z-10 inset-0 bg-blue-100/50 bg h-1/2 bottom-0 left-0 w-full rounded-sm"></div>
+                <div className="relative text-blue-500 text-2xl z-10">
+                  Specialized
+                </div>
+              </div>
+            </div>
+            {servicesData.specialized.map((service, index) => (
               <div
                 key={index}
                 className="bg-white border-2 border-blue-600/10 rounded-2xl p-4 hover:border-blue-300 hover:shadow-lg transition-all duration-300 group relative overflow-hidden"
