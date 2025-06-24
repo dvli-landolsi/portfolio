@@ -28,25 +28,22 @@ export default function Header() {
     {
       key: "1",
       label: (
-        <a
-          href="/resume-eng-landolsi-mohamedali.pdf"
-          download="resume-eng-landolsi-mohamedali.pdf"
-        >
+        <a href="/resume-eng.pdf" download="resume-eng-landolsi-mohamedali.pdf">
           English Resume
         </a>
       ),
     },
-    {
-      key: "2",
-      label: (
-        <a
-          href="/resume-fr-landolsi-mohamedali.pdf"
-          download="resume-fr-landolsi-mohamedali.pdf"
-        >
-          French Resume
-        </a>
-      ),
-    },
+    // {
+    //   key: "2",
+    //   label: (
+    //     <a
+    //       href="/resume-fr-landolsi-mohamedali.pdf"
+    //       download="resume-fr-landolsi-mohamedali.pdf"
+    //     >
+    //       French Resume
+    //     </a>
+    //   ),
+    // },
   ];
 
   return (

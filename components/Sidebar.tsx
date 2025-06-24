@@ -71,7 +71,6 @@ export default function Sidebar() {
             "HTML5",
             "Tailwind",
             "Docker",
-
             "JavaScript",
             "Vue.js",
             "MUI",
