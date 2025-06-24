@@ -67,7 +67,7 @@ const projects = [
       location: "Tunis",
     },
     link: "#",
-    liveLink: "https://www.ostedhy.com",
+    // liveLink: "https://www.ostedhy.com",
     status: "Currently in Development",
     images: [
       "/projects/perfomance.jpg",
